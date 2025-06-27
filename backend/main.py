@@ -31,7 +31,7 @@ try:
 except LookupError:
     nltk.download('averaged_perceptron_tagger')
 
-app = FastAPI()
+app = FastAPI(title="GenAI Research Assistant")
 
 # Enable CORS
 app.add_middleware(
